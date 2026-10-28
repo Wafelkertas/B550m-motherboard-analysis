@@ -101,3 +101,5 @@ Tidak ada `AOD_SETUP` default yang dapat diekstrak sebagai entri NVAR standar da
 
 Langkah read-only berikutnya—bila dijalankan pada PC target—adalah mengambil salinan variabel UEFI runtime `AOD_SETUP` beserta metadata GUID, lalu membandingkan byte offset `0x13D` dengan state menu. Itu akan menunjukkan apakah firmware membentuk gate pada boot atau data NVRAM persisten, tanpa mengubah nilai apa pun.
 
+Skrip Windows read-only untuk mengambil snapshot tersebut tersedia pada [`scripts/Read-AodSetup.ps1`](scripts/Read-AodSetup.ps1); petunjuknya ada pada [`scripts/README.md`](scripts/README.md).
+
